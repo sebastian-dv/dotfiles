@@ -1,0 +1,18 @@
+# Font
+font_family caskaydiamono
+font_size 13.0
+
+# Cursor
+cursor_shape beam
+cursor_beam_thickness 8
+cursor_underline_thickness 8.0
+
+# Mapping
+# Open new tab, ctrl shift q to close
+map f1 launch --cwd=current --type=tab 
+
+
+# BEGIN_KITTY_THEME
+# Darkside
+include current-theme.conf
+# END_KITTY_THEME
