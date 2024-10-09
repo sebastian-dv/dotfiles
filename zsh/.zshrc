@@ -28,3 +28,8 @@ alias tma="tmux attach -t $1"
 alias sd="cd \$(find * -type d | fzf)"
 
 alias vim="nvim"
+
+alias vim-chad="NVIM_APPNAME=NvChad vim"
+alias vim-astro="NVIM_APPNAME=AstroNvim vim"
+alias vim-lazy="NVIM_APPNAME=LazyVim vim"
+alias vim-kickstart="NVIM_APPNAME=kickstart-nvim vim"

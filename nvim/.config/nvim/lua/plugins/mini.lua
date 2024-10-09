@@ -3,6 +3,11 @@ return {
 	version = false,
 	config = function()
 		require('mini.surround').setup({})
+		-- Add surrounding with sa (in visual mode or on motion).
+		-- Delete surrounding with sd.
+		-- Replace surrounding with sr.
+		-- Find surrounding with sf or sF (move cursor right or left).
+		-- Highlight surrounding with sh.
 		require('mini.move').setup({
 			-- Module mappings. Use `''` (empty string) to disable one.
 			mappings = {
@@ -19,10 +24,5 @@ return {
 				line_up = '<M-k>',
 			}
 		})
-		-- Add surrounding with sa (in visual mode or on motion).
-		-- Delete surrounding with sd.
-		-- Replace surrounding with sr.
-		-- Find surrounding with sf or sF (move cursor right or left).
-		-- Highlight surrounding with sh.
 	end
 }

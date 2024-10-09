@@ -2,7 +2,7 @@ return {
 	{
 	"hrsh7th/nvim-cmp",
 	dependencies = {
-		'hrsh7th/cmp-buffer',
+		-- 'hrsh7th/cmp-buffer',
 		'hrsh7th/cmp-path',
 		'hrsh7th/cmp-cmdline'
 	},
@@ -29,8 +29,16 @@ return {
 				['<CR>'] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 			}),
 			sources = cmp.config.sources({
-				{ name = 'nvim_lsp' },
-				{ name = 'luasnip' }, -- For luasnip users.
+				{ name = 'luasnip' },
+				{
+					name = 'nvim_lsp',
+					entry_filter = function(entry, ctx)
+						if entry:get_kind() == 1 then
+							return false
+						end
+						return true
+					end
+				}, -- For luasnip users.
 				}, {
 					{ name = 'buffer' },
 			})
