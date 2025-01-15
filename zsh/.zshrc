@@ -29,7 +29,7 @@ alias sd="cd \$(find * -type d | fzf)"
 
 alias vim="nvim"
 
-alias vim-chad="NVIM_APPNAME=NvChad vim"
-alias vim-astro="NVIM_APPNAME=AstroNvim vim"
-alias vim-lazy="NVIM_APPNAME=LazyVim vim"
-alias vim-kickstart="NVIM_APPNAME=kickstart-nvim vim"
+alias vim-chad="NVIM_APPNAME=NvChad nvim $1"
+alias vim-astro="NVIM_APPNAME=AstroNvim nvim $1"
+alias vim-lazy="NVIM_APPNAME=LazyVim nvim $1"
+alias vim-kickstart="NVIM_APPNAME=kickstart-nvim nvim $1"
