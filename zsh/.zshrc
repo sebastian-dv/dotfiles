@@ -27,9 +27,8 @@ export DISPLAY='0'
 alias tma="tmux attach -t $1"
 alias sd="cd \$(find * -type d | fzf)"
 
-alias vim="nvim"
+# alias vim="nvim"
 
-alias vim-chad="NVIM_APPNAME=NvChad nvim $1"
-alias vim-astro="NVIM_APPNAME=AstroNvim nvim $1"
-alias vim-lazy="NVIM_APPNAME=LazyVim nvim $1"
-alias vim-kickstart="NVIM_APPNAME=kickstart-nvim nvim $1"
+alias vim="NVIM_APPNAME=LazyVim nvim $1"
+
+export SSH_AUTH_SOCK=/Users/sebastian/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
