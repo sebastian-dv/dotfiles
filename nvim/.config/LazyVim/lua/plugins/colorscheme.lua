@@ -1,10 +1,17 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  --{ "ellisonleao/gruvbox.nvim" },
+
+  {
+    "darianmorat/gruvdark.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "gruvdark",
     },
   },
 }
